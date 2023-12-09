@@ -1,13 +1,14 @@
 package Classes;
 
 import Classes.Account.BankCard;
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Human {
     private final String name;
     private final Account account;
     private final String password;
-    private final HashSet<BankCard> bankCards;
+    private final ArrayList<BankCard> bankCards;
 
     public String getName() {
         return name;
@@ -21,7 +22,7 @@ public class Human {
         return password;
     }
 
-    public HashSet<BankCard> getBankCards() {
+    public ArrayList<BankCard> getBankCards() {
         return bankCards;
     }
     public void addCard(Account.BankCard bankCard) {
@@ -31,7 +32,7 @@ public class Human {
         return password.equals(enteredPassword);
     }
     public Human(String name, String password, Account account) {
-        this.bankCards = new HashSet<>();
+        this.bankCards = new ArrayList<>();
         this.name = name;
         this.password = password;
         this.account = account;

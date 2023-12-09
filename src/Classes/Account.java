@@ -1,5 +1,6 @@
 package Classes;
 
+import java.util.ArrayList;
 import java.util.Random;
 import Exception.InsufficientFundsException;
 import java.util.stream.Collectors;
